@@ -35,10 +35,11 @@ end
 def print_movies(films)
   # some iteration magic and puts out the movies in a nice list
   films.each.with_index(1) do |data,index|
-   puts "{index}" + data['title']
-   binding.pry
+   puts "#{index}" + data['title']
   end
 end
+
+
 
 def show_character_movies(character)
   films = get_character_movies_from_api(character)
